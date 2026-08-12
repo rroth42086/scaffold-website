@@ -1,0 +1,79 @@
+.app-icons-section {
+  padding: 6rem 0;
+  background: #09090b;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.app-icons-label {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #71717a;
+  margin-bottom: 4rem;
+}
+
+.app-icons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.app-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.app-icon-item:hover {
+  transform: translateY(-8px);
+}
+
+.app-icon-container {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(1) opacity(0.6);
+  transition: all 0.3s ease;
+}
+
+.app-icon-item:hover .app-icon-container {
+  filter: grayscale(0) opacity(1) drop-shadow(0 0 15px rgba(217, 234, 61, 0.2));
+}
+
+.app-logo-img, .app-logo-svg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.app-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #52525b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.app-icon-item:hover .app-name {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .app-icons-grid {
+    gap: 2rem;
+  }
+  .app-icon-item {
+    width: 100px;
+  }
+}
